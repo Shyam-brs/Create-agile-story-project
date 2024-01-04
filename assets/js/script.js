@@ -124,7 +124,8 @@ const formValidate = (e) => {
   e.preventDefault();
   if (title.value === "") {
     alert("plese enter the title");
-    assignedto.focus();
+    title.focus();
+    return;
   }
   if (description.value === "") {
     alert("Please enter description");
